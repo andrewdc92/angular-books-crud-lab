@@ -1,0 +1,24 @@
+{
+  "name": "angular-books-crud-lab",
+  "version": "1.0.0",
+  "description": "<!-- Location: SF -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewdc92/angular-books-crud-lab.git"
+  },
+  "author": "andrewdc92",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewdc92/angular-books-crud-lab/issues"
+  },
+  "homepage": "https://github.com/andrewdc92/angular-books-crud-lab#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.0"
+  }
+}
