@@ -1,11 +1,12 @@
 // defines the apps behavior through functions
 angular
-  .module(bookApp)
+  .module('bookApp')
   .controller('BooksIndexController', BooksIndexController);
 
   BooksIndexController.$inject = ['$http'];
   function BooksIndexController($http) {
-    var vm = this,
+    var vm = this;
+    // debugger
     vm.newBook = {};
     vm.newBook = {
       title: "The Four Hour Workweek",
@@ -24,3 +25,24 @@ angular
       }
     ];
   };
+
+  // $http({
+  //   method: 'GET',
+  //   url: '/api/books'
+  // }).then(function successCallback(response) {
+  //   vm.albums = response.data;
+  // }, function errorCallback(response) {
+  //   console.log('There was an error', response);
+  // });
+  //
+  // vm.createAlbum = function () {
+  //   $http({
+  //     method: 'POST',
+  //     url: '/api/books'
+  //     data: vm.newBook
+  //   }).then(fuction successCallback(response) {
+  //     vm.books.push(response.data);
+  //   }, function errorCallback(response) {
+  //     console.log('There was an error posting info', response)
+  //   });
+  // }
